@@ -32,58 +32,56 @@
                     website. To use a variable with the entire site declare it in the :root selector as shown in the
                     coding below.
                 </p>
-                <Table class="wheretotable">
-                    <div>
-                        <tr></tr>
-                        <th>Variable Root Selector</th>
-                        <td>:root {
-                            --first-color: #ff3434;
-                            --second-color: #111111;
-                            --third-color: #0000FF;
-                            --fourth-color: #808080;
-                            --fifth-color: #008000;
+                <table class="wheretotable">
+                    <tr></tr>
+                    <th>Variable Root Selector</th>
+                    <td>:root {
+                        --first-color: #ff3434;
+                        --second-color: #111111;
+                        --third-color: #0000FF;
+                        --fourth-color: #808080;
+                        --fifth-color: #008000;
 
-                            --padding-size1: 1rem;
-                            --padding-size2: .5rem;
-                            --padding-size3: .75rem;
+                        --padding-size1: 1rem;
+                        --padding-size2: .5rem;
+                        --padding-size3: .75rem;
 
-                            --font-size1: 2rem;
-                            --font-size2: 1rem;
-                            --font-size3: .5rem;
+                        --font-size1: 2rem;
+                        --font-size2: 1rem;
+                        --font-size3: .5rem;
 
-                            --margin-size: 6rem;
-                            --margin-size2: 0 0rem 0 5rem ;
+                        --margin-size: 6rem;
+                        --margin-size2: 0 0rem 0 5rem ;
+                        }
+                    </td>
+                    </tr>
+                    <tr>
+                        <th>Variable Useage</th>
+                        <td>#p1{
+                            background-color: var(--first-color);
+                            color: var(--second-color);
+                            padding: var(--padding-size2);
+                            font-size: var(--font-size1);
+                            margin:var(--margin-size2);
+                            }
+                            #p2{
+                            background-color: var(--third-color);
+                            color: var(--fourth-color);
+                            font-size: var(--font-size3);
+                            }
+                            #p3{
+                            background-color: var(--third-color);
+                            color: var(--fifth-color);
+                            padding: var(--padding-size3);
+                            }
+                            #p4{
+                            background-color: var(--fifth-color);
+                            color: yellow;
+                            padding: var(1);
                             }
                         </td>
-                        </tr>
-                        <tr>
-                            <th>Variable Useage</th>
-                            <td>#p1{
-                                background-color: var(--first-color);
-                                color: var(--second-color);
-                                padding: var(--padding-size2);
-                                font-size: var(--font-size1);
-                                margin:var(--margin-size2);
-                                }
-                                #p2{
-                                background-color: var(--third-color);
-                                color: var(--fourth-color);
-                                font-size: var(--font-size3);
-                                }
-                                #p3{
-                                background-color: var(--third-color);
-                                color: var(--fifth-color);
-                                padding: var(--padding-size3);
-                                }
-                                #p4{
-                                background-color: var(--fifth-color);
-                                color: yellow;
-                                padding: var(1);
-                                }
-                            </td>
-                        </tr>
-                    </div>
-                </Table>
+                    </tr>
+                </table>
             </section>
 
         </div>
