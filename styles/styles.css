@@ -1,0 +1,24 @@
+.wheretable table,
+th,
+td,
+tr {
+    --first-color: #ff3434;
+    --second-color: #111111;
+    --third-color: #0000FF;
+    --fourth-color: #808080;
+    --fifth-color: #008000;
+    --sixthcolor: #ffffff;
+
+    --padding-size1: .5rem;
+    --padding-size2: 1.5rem;
+    --padding-size3: .25rem;
+
+    --textcenter: center;
+
+    --bordersize1: 1px, solid;
+    --bordersize2: 1.5px solid;
+    border: var(--bordersize1);
+    background-color: var(--second-color);
+    text-align: var(--textcenter);
+    color: var(--sixthcolor);
+}
