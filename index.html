@@ -58,9 +58,214 @@
 
         </div>
 
-        <div> <!--Quinn's Div-->
+        <div class="special-case-uses"> <!--Quinn's Div-->
+
+            <h2 class="special-case-use-title">
+
+                Special Case Uses
+
+            </h2>
+
+            <section class="media-queries">
 
 
+                <h3 class="scu-subtitle-one">
+
+                    Media Queries:
+
+                </h3>
+
+                <p class="scu-pg-one"> <!--scu = special case use | pg = paragraph-->
+
+                    When writing CSS in a traditional sense, repetition can be a tedious and persistent acquaintance. When creating media queries for a responsive webpage, you may typically write something similar to the following:
+
+                </p>
+
+                <table class="example-one">
+
+                    <tr>
+
+                        <th>Example 1</th>
+                    
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            
+                            <img src="images/scu-example-1.png" alt="">
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+                <p class="scu-pg-two">
+
+                    Now this works just fine, but it can get very time consuming, especially with larger pages with lots of content. Before you know it your code is thousands of lines long and you're struggling to find what you are looking for. Repetitive and time consuming, no fun! Instead, if we use custom CSS Variables, we can define a breakpoint once, and reuse it anywhere we want with just a couple lines of code!
+
+                </p>
+
+                
+            </section>
+
+            <section class="creating-variables">
+            
+            <h3 class="scu-subtitle-two">
+
+                Creating Our Variables:
+
+            </h3>
+
+            <p class="scu-pg-three">
+
+                We can define our variables to our :root and in doing so make those variables available to any element on our page. Let's start by creating our variables:
+
+            </p>
+
+            <table class="example-two">
+
+                <tr>
+
+                    <th>Example 2</th>
+                
+                </tr>
+
+                <tr>
+
+                    <td>
+                        
+                        <img src="images/scu-example-2.png" alt="">
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        
+                        <p>
+                            
+                            Now we can call those variables instead!<br>
+
+                            When using custom properties in CSS it must be called inside of var()
+
+
+                        </p>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <img src="images/scu-example-3.png" alt="">
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            </section>
+
+            <section class="using-cstm-vars">
+
+                <h3 class="scu-subtitle-three">
+
+                    Using Custom Variables in Media Queries
+
+                </h3>
+
+                <p class="scu-pg-three">
+
+                    Once we have some custom properties to work with, we can also integrate them into our media queries, this will allow easier customizability when making future changes to your page.
+
+                </p>
+
+                <table class="example-three">
+
+                    <tr>
+    
+                        <th>Example 3</th>
+                    
+                    </tr>
+    
+                    <tr>
+    
+                        <td>
+                            
+                            <img src="images/scu-example-4.png" alt="">
+    
+                        </td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td>
+                            
+                            <p>
+    
+                                In this example we have a media query for desktop sizing at 60em, we can now repeat the same process we did earlier and call upon our custom variable for desktop sizing.
+
+                            </p>
+    
+                        </td>
+    
+                    </tr>
+    
+                </table>
+
+            </section>
+
+            <section class="scu-why-use-it">
+
+                <h3 class="scu-subtitle-four">
+
+                    Why is this useful?
+                
+                </h3>
+
+                <p>Now you might be wondering what the point is if you still have to call the variable in the font-size property, it’s really no different than typing in the size manually. Well imagine this large webpage we were picturing earlier, and halfway through the development you realize you hate the color scheme you have, or you want the font to be slightly smaller on desktop, or you want all of your paragraph elements to be a different font. Traditionally you would have to go through every breakpoint and make those changes manually, and if you’re already 1000 lines or more deep, you’ve got a long night of copying and pasting ahead of you. This is where using CSS variables in media queries truly shines!</p>
+
+                <table>
+
+                    <tr>
+
+                        <th>Back to our roots (just a pun for fun)</th>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="images/scu-example-5.png" alt="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>we have our established variables up top, now if we decided that we want our headings to be different halfway through development, rather than manually changing every single area that has an h2 for example, we can simply change our variable in our :root.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/scu-example-6.png" alt=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Anywhere on our page that has an h2 or h1 will automatically change to the new value we’ve just entered in our custom variables, so long as you used those custom variables when styling your page. This has the potential to greatly streamline your code when styling your page and can prevent the repetitive task of manually changing it yourself.</p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </section>
 
         </div>
     </main>
