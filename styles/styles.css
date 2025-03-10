@@ -5,6 +5,20 @@ body {
 
 }
 
+h1,
+h2,
+h3 {
+
+    font-family: 'Yantramanav', Arial, Helvetica, sans-serif;
+
+}
+
+p {
+
+    font-family: 'heebo', Arial, Helvetica, sans-serif;
+
+}
+
 .wheretable table,
 th,
 td,
