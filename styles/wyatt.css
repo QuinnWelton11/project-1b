@@ -9,6 +9,10 @@
     --padding-size1: .5rem;
     --padding-size2: 1.5rem;
     --padding-size3: .25rem;
+
+    --font-sizep: 1rem;
+    --font-weightp: 500;
+    --line-heightp: 1.5rem;
 }
 
 .wheretable table,
@@ -64,4 +68,30 @@ tr {
 
 
 
-@media (min-width: 50em) {}
+@media (min-width: 50em) {
+    .whyp {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+    
+    .wherep {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    
+    }
+    
+    .whereman{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+    
+    .wherelocal{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+    
+}
