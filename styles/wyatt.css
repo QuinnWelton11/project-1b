@@ -73,12 +73,16 @@ tr {
         font-size: 1rem;
         font-weight: 500;
         line-height: 1.5rem;
+        padding-left: 1rem;
+        margin-right: 55rem;
     }
     
     .wherep {
         font-size: 1rem;
         font-weight: 500;
         line-height: 1.5rem;
+        padding-left: 1rem;
+        margin-right: 55rem;
     
     }
     
@@ -86,12 +90,29 @@ tr {
         font-size: 1rem;
         font-weight: 500;
         line-height: 1.5rem;
+        padding-left: 1rem;
+        margin-right: 55rem;
     }
     
     .wherelocal{
         font-size: 1rem;
         font-weight: 500;
         line-height: 1.5rem;
+        padding-left: 1rem;
+        margin-right: 55rem;
     }
     
+    .variablesina{
+        padding-left: 1rem;
+        margin-right: 55rem;
+    }
+    .local{
+        padding-left: 1rem;
+        margin-right: 55rem;
+    }
+.displayloc{
+    padding-left: 1rem;
+        margin-right: 55rem;
+}
+
 }
