@@ -34,8 +34,34 @@ tr {
     background-color: var(--second-color);
     text-align: var(--textcenter);
     color: var(--sixthcolor);
+
 }
 
-@media (min-width: 50em) {
-    
+.whyp {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
 }
+
+.wherep {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+
+}
+
+.whereman{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.wherelocal{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+
+
+@media (min-width: 50em) {}
