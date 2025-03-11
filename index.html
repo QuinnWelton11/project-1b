@@ -92,7 +92,7 @@
 
 				<p>You can use CSS custom properties where ever you need. They are very useful and helpful to building websites, and maintaining consistency throughout. CSS variables can be used throughout the entire site or locally to a specific section of the website. To use a variable with the entire site declare it in the :root selector as shown in the coding below.</p>
 				
-				<table class="wheretable">
+				<!-- <table class="wheretable">
 					<tr>
 						<th>Variable Root Selector</th>
 						<th>Variable Useage</th>
@@ -101,7 +101,56 @@
 						<td><img src="images/rootvar.jpg" alt="root variables"></td>
 						<td><img src="images/Variables.jpg" alt="variables-in-use"></td>
 					</tr>
-				</table>
+				</table> -->
+				<figure>
+					<figcaption>Variable Root Selector</figcaption>
+<pre>:root {
+	--first-color: #ff3434;
+	--second-color: #111111;
+	--third-color:  #0000FF;
+	--fourth-color: #808080;
+	--fifth-color: #008000;
+
+	--padding-size1: 1rem;
+	--padding-size2: .5rem;
+	--padding-size3: .75rem;
+	
+	--font-size1: 2rem;
+	--font-size2: 1rem;
+	--font-size3: .5rem;
+
+	--margin-size: 6rem;
+	--margin-size2: 0 0rem 0 5rem;
+}</pre>
+				</figure>
+
+				<figure>
+					<figcaption>Variable Usage</figcaption>
+<pre>#p1 {
+    background-color: var(--first-color);
+    color: var(--second-color);
+    padding: var(--padding-size2);
+    font-size: var(--font-size1);
+    margin:var(--margin-size2);
+}
+
+#p2 {
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+    font-size: var(--font-size3);
+}
+
+#p3 {
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+    padding: var(--padding-size3);
+}
+#p4 {
+    background-color: var(--fifth-color);
+    color: yellow;
+    padding: var(1);
+}</pre>
+				</figure>
 			</section>
 
 			<p>As you can see from the code above you can manipulate your entire site using variables.</p>
@@ -110,7 +159,19 @@
 
 			<p>To use a variable with a localized section you place the variable inside the section that is going to use it. As seen in the coding below.</p>
 
-			<img src="images/locallized.jpg" alt="localized">
+			<!-- <img src="images/locallized.jpg" alt="localized"> -->
+			<figure>
+<pre>#p5 {
+	--background-color1: #FFC0CB;
+    --background-color2:#FF00FF;
+    --font-size4: 1.5rem;
+    --margin-size3: 0 25rem 0 25rem;
+
+    background-color: var(--background-color2);
+    font-size: var(--font-size4);
+    margin: var(--margin-size3);
+}</pre>
+			</figure>
 
 			<img src="images/localizeddisplay.jpg" alt="display for local variables">
 		</div>
@@ -125,14 +186,28 @@
 				<!--scu = special case use | pg = paragraph-->
 				<p class="scu-pg-one">When writing CSS in a traditional sense, repetition can be a tedious and persistent acquaintance. When creating media queries for a responsive webpage, you may typically write something similar to the following:</p>
 
-				<table class="example-one">
+				<!-- <table class="example-one">
 					<tr>
 						<th>Example 1</th>
 					</tr>
 					<tr>
 						<td><img src="images/scu-example-1.png" alt=""></td>
 					</tr>
-				</table>
+				</table> -->
+				<article>
+					<h3>Example 1</h3>
+					
+					<figure>
+<pre>h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+</pre>
+					</figure>
+				</article>
 
 				<p class="scu-pg-two">Now this works just fine, but it can get very time consuming, especially with larger pages with lots of content. Before you know it your code is thousands of lines long and you're struggling to find what you are looking for. Repetitive and time consuming, no fun! Instead, if we use custom CSS Variables, we can define a breakpoint once, and reuse it anywhere we want with just a couple lines of code!</p>
 			</section>
@@ -142,7 +217,7 @@
 			
 				<p class="scu-pg-three">We can define our variables to our :root and in doing so make those variables available to any element on our page. Let's start by creating our variables:</p>
 
-				<table class="example-two">
+				<!-- <table class="example-two">
 					<tr>
 						<th>Example 2</th>
 					</tr>
@@ -160,7 +235,48 @@
 					<tr>
 						<td><img src="images/scu-example-3.png" alt=""></td>
 					</tr>
-				</table>
+				</table> -->
+				<article>
+					<h3>Example 2</h3>
+
+					<figure>
+<pre>:root {
+    --h1-mobile: 2rem;
+    --h1-desktop: 4rem;
+    --h2-mobile: 1.5rem;
+    --h2-desktop: 2rem;  
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}</pre>
+					</figure>
+
+					<figure>
+<pre>:root {
+    --h1-mobile: 2rem;
+    --h1-desktop: 4rem;
+    --h2-mobile: 1.5rem;
+    --h2-desktop: 2rem;  
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}</pre>
+						<figcaption>
+							Now we can call those variables instead!<br>
+							When using custom properties in CSS it must be called inside of var()
+						</figcaption>
+					</figure>
+				</article>
 			</section>
 
 			<section class="using-cstm-vars">
@@ -168,7 +284,7 @@
 
 				<p class="scu-pg-three">Once we have some custom properties to work with, we can also integrate them into our media queries, this will allow easier customizability when making future changes to your page.</p>
 
-				<table class="example-three">
+				<!-- <table class="example-three">
 					<tr>
 						<th>Example 3</th>
 					</tr>
@@ -178,7 +294,23 @@
 					<tr>
 						<td><p>In this example we have a media query for desktop sizing at 60em, we can now repeat the same process we did earlier and call upon our custom variable for desktop sizing.</p></td>
 					</tr>
-				</table>
+				</table> -->
+				<article>
+					<h3>Example 3</h3>
+
+					<figure>
+<pre>@media (min-width: 60em) {
+    h1 {
+        font-size: var(--h1-desktop);
+    }
+   
+	h2 {
+        font-size: var(--h2-desktop);
+    }
+}</pre>
+						<figcaption>In this example we have a media query for desktop sizing at 60em, we can now repeat the same process we did earlier and call upon our custom variable for desktop sizing.</figcaption>
+					</figure>
+				</article>
 			</section>
 
 			<section class="scu-why-use-it">
@@ -203,6 +335,30 @@
 						<td><p>Anywhere on our page that has an h2 or h1 will automatically change to the new value we’ve just entered in our custom variables, so long as you used those custom variables when styling your page. This has the potential to greatly streamline your code when styling your page and can prevent the repetitive task of manually changing it yourself.</p></td>
 					</tr>
 				</table>
+				<article>
+					<h3>Back to our roots (just a pun for fun)</h3>
+				</article>
+				<figure>
+<pre>:root {
+    --h1-mobile: 2rem;
+    --h1-desktop: 4rem;
+    --h2-mobile: 1.5rem;
+    --h2-desktop: 2rem;  
+}
+</pre>
+					<figcaption>we have our established variables up top, now if we decided that we want our headings to be different halfway through development, rather than manually changing every single area that has an h2 for example, we can simply change our variable in our :root.</figcaption>
+				</figure>
+
+				<figure>
+<pre>:root {
+    --h1-mobile: 1.5rem;
+    --h1-desktop: 2.5rem;
+    --h2-mobile: 1rem;
+    --h2-desktop: 2.5rem;
+}
+</pre>
+					<figcaption>Anywhere on our page that has an h2 or h1 will automatically change to the new value we’ve just entered in our custom variables, so long as you used those custom variables when styling your page. This has the potential to greatly streamline your code when styling your page and can prevent the repetitive task of manually changing it yourself.</figcaption>
+				</figure>
 			</section>
 		</div>
 	</main>
