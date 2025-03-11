@@ -46,6 +46,12 @@ header {
 
 }
 
+section {
+
+    margin-bottom: 2rem;
+
+}
+
 p {
 
     color: var(--fg-color);
