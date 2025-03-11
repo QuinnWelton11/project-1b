@@ -6,33 +6,39 @@
 
     --mobile-padding: 1.125rem;
     --tablet-padding: 3.125rem;
-    --desktop-padding: 33.75rem;
+    --desktop-padding: 67.5rem;
 
 }
 
 .example-one {
 
     margin: 0 auto;
-    width: 100%;
+    max-width: 67.5rem;
 
 }
 
 .example-two {
 
     margin: 0 auto;
-    width: 100%;
+    max-width: 67.5rem;
 
 }
 .example-three {
 
     margin: 0 auto;
-    width: 100%;
+    max-width: 67.5rem;
 
 }
 
+h2,
+h3,
+p {
 
+    max-width: 67.5rem;
 
-.media-queries h3 {
+}
+
+.media-queries {
 
     font-size: var(--fs-mobile);
 
@@ -40,7 +46,7 @@
 
 }
 
-.media-queries p {
+.creating-variables  {
 
     font-size: var(--fs-mobile);
 
@@ -48,7 +54,7 @@
 
 }
 
-.creating-variables h3 {
+.using-cstm-vars  {
 
     font-size: var(--fs-mobile);
 
@@ -56,7 +62,7 @@
 
 }
 
-.creating-variables p {
+.scu-why-use-it  {
 
     font-size: var(--fs-mobile);
 
@@ -64,169 +70,129 @@
 
 }
 
-.using-cstm-vars h3 {
+@media (min-width: 48em) {
 
-    font-size: var(--fs-mobile);
+    .example-one {
 
-    padding: 0 var(--mobile-padding);
-
-}
-
-.using-cstm-vars p {
-
-    font-size: var(--fs-mobile);
-
-    padding: 0 var(--mobile-padding);
-
-}
-
-.scu-why-use-it h3 {
-
-    font-size: var(--fs-mobile);
-
-    padding: 0 var(--mobile-padding);
-
-}
-
-.scu-why-use-it p {
-
-    font-size: var(--fs-mobile);
-
-    padding: 0 var(--mobile-padding);
-
-}
-
-@media (min-width: 48em;) {
-
-    .media-queries h3 {
-
-        font-size: var(--fs-tablet);
-
-        padding: var(--tablet-padding);
+        margin: 0 auto;
+        width: 90%;
     
     }
     
-    .media-queries p {
+    .example-two {
     
+        margin: 0 auto;
+        width: 90%;
+    
+    }
+    .example-three {
+    
+        margin: 0 auto;
+        width: 90%;
+    
+    }
+
+    .media-queries  {
+
         font-size: var(--fs-tablet);
 
-        padding: var(--tablet-padding);
+        padding: 0 var(--tablet-padding);
     
     }
     
-    .creating-variables h3 {
+    .creating-variables  {
     
         font-size: var(--fs-tablet);
 
-        padding: var(--tablet-padding);
+        padding: 0 var(--tablet-padding);
     
     }
     
-    .creating-variables p {
+    .using-cstm-vars  {
     
         font-size: var(--fs-tablet);
 
-        padding: var(--tablet-padding);
+        padding: 0 var(--tablet-padding);
     
     }
-    
-    .using-cstm-vars h3 {
+
+    .scu-why-use-it  {
     
         font-size: var(--fs-tablet);
 
-        padding: var(--tablet-padding);
-    
-    }
-    
-    .using-cstm-vars p {
-    
-        font-size: var(--fs-tablet);
-
-        padding: var(--tablet-padding);
-    
-    }
-    
-    .scu-why-use-it h3 {
-
-        font-size: var(--fs-tablet);
-
-        padding: var(--tablet-padding);
-    
-    }
-    
-    .scu-why-use-it p {
-    
-        font-size: var(--fs-tablet);
-
-        padding: var(--tablet-padding);
+        padding: 0 var(--tablet-padding);
     
     }
 
 }
 
-@media (min-width: 67.5rem;) {
+@media (min-width: 67.5rem) {
 
-    .media-queries h3 {
+    p {
 
-        font-size: var(--fs-desktop);
+        max-width: 67.5rem;
+        margin: 0 auto;
 
-        padding: var(--desktop-padding);
+    }
+
+    h2,
+    h3,
+    p {
+
+    max-width: 67.5rem;
+
+    }
+
+    .example-one {
+
+        margin: 1rem auto;
+        max-width: 67.5rem;
     
     }
     
-    .media-queries p {
+    .example-two {
     
+        margin: 1rem auto;
+        max-width: 67.5rem;
+    
+    }
+    .example-three {
+    
+        margin: 1rem auto;
+        max-width: 67.5rem;
+    
+    }
+
+    .media-queries  {
+
         font-size: var(--fs-desktop);
 
-        padding: var(--desktop-padding);
+        padding: 0 var(--tablet-padding);
     
     }
     
-    .creating-variables h3 {
+    .creating-variables  {
     
         font-size: var(--fs-desktop);
 
-        padding: var(--desktop-padding);
+        padding: 0 var(--tablet-padding);
     
     }
     
-    .creating-variables p {
+    .using-cstm-vars  {
     
         font-size: var(--fs-desktop);
 
-        padding: var(--desktop-padding);
+        padding: 0 var(--tablet-padding);
     
     }
     
-    .using-cstm-vars h3 {
+    .scu-why-use-it  {
     
         font-size: var(--fs-desktop);
 
-        padding: var(--desktop-padding);
-    
-    }
-    
-    .using-cstm-vars p {
-    
-        font-size: var(--fs-desktop);
+        padding: 0 var(--tablet-padding);
 
-        padding: var(--desktop-padding);
-    
-    }
-    
-    .scu-why-use-it h3 {
-
-        font-size: var(--fs-desktop);
-
-        padding: var(--desktop-padding);
-    
-    }
-    
-    .scu-why-use-it p {
-    
-        font-size: var(--fs-desktop);
-
-        padding: var(--desktop-padding);
     
     }
 
