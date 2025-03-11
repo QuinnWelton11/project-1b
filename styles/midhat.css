@@ -1,0 +1,23 @@
+article h3 {
+    font-size: 1.25rem !important;
+    font-style: italic;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+figcaption {
+    padding: 1rem;
+
+    background-color: black;
+    color: white;
+}
+
+pre {
+    margin: 0;
+    padding: 1rem;
+    overflow-x: scroll;
+
+    background-color: #EEE;
+}
