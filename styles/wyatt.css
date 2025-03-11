@@ -15,11 +15,11 @@
 th,
 td,
 tr {
-    --first-color: #ff3434;
+    --first-color: #ff7e7e;
     --second-color: #111111;
-    --third-color: #0000FF;
+    --third-color: #7777f8;
     --fourth-color: #808080;
-    --fifth-color: #008000;
+    --fifth-color: #6eff6e;
     --sixthcolor: #ffffff;
 
     --padding-size1: .5rem;
