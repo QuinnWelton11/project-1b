@@ -1,64 +1,64 @@
-.example-one {
+:root {
 
-    margin: 0 auto;
-    width: 100%;
+    --padding-1: 1rem;
+    --padding-2: 1.25rem;
+    --padding-3: 1.5rem;
+    --padding-4: 2rem;
 
-}
+    --font-size-sml: 1rem;
+    --font-size-med: 1.5rem;
+    --font-size-lrg: 2rem;
 
+    --font-1: 'Yantramanav', Arial, Helvetica, sans-serif;
+    --font-2: 'Heebo', Arial, Helvetica, sans-serif;
 
+    --margin-sml: 1rem;
+    --margin-med: 1.5rem;
+    --margin-large: 2rem;
 
-.media-queries h3 {
+    --max-width-mobile: 100%;
+    --max-width-tablet: 37.5rem;
+    --max-width-desktop: 67.5rem;
 
-    font-size: 1.5rem;
-    font-weight: 600;
-
-}
-
-.media-queries p {
-
-    font-size: 1rem;
-    font-weight: 500;
-
-}
-
-.creating-variables h3 {
-
-    font-size: 1.5rem;
-    font-weight: 600;
+    --bg-color: #262523;
+    --fg-color: #F5F5F5;
+    --tr-color: #7dcbff;
 
 }
 
-.creating-variables p {
+body {
 
-    font-size: 1rem;
-    font-weight: 500;
-
-}
-
-.using-cstm-vars h3 {
-
-    font-size: 1.5rem;
-    font-weight: 600;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* margin: 0 auto; */
+    padding: 0 var(--padding-1);
+    max-width: var(--max-width-mobile);
+    background-color: var(--bg-color);
+    /* overflow: hidden; */
 
 }
 
-.using-cstm-vars p {
+p {
 
-    font-size: 1rem;
-    font-weight: 500;
-
-}
-
-.scu-why-use-it h3 {
-
-    font-size: 1.5rem;
-    font-weight: 600;
+    color: var(--fg-color);
 
 }
 
-.scu-why-use-it p {
+h1,
+h2 {
 
-    font-size: 1rem;
-    font-weight: 500;
+    color: var(--fg-color);
+
+}
+
+h3 {
+
+    color: var(--tr-color)
+
+}
+
+abbr {
+
+    color: var(--tr-color);
 
 }
