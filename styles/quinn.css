@@ -1,3 +1,15 @@
+:root {
+
+    --fs-mobile: 1rem;
+    --fs-tablet: 1.125rem;
+    --fs-desktop: 1.25rem;
+
+    --mobile-padding: 1.125rem;
+    --tablet-padding: 3.125rem;
+    --desktop-padding: 33.75rem;
+
+}
+
 .example-one {
 
     margin: 0 auto;
@@ -9,56 +21,55 @@
 
 .media-queries h3 {
 
-    font-size: 1.5rem;
-    
+    var(--fs-mobile)
 
 }
 
 .media-queries p {
 
     font-size: 1rem;
-    
+    font-weight: 500;
 
 }
 
 .creating-variables h3 {
 
     font-size: 1.5rem;
-    
+    font-weight: 600;
 
 }
 
 .creating-variables p {
 
     font-size: 1rem;
-    
+    font-weight: 500;
 
 }
 
 .using-cstm-vars h3 {
 
     font-size: 1.5rem;
-    
+    font-weight: 600;
 
 }
 
 .using-cstm-vars p {
 
     font-size: 1rem;
-    
+    font-weight: 500;
 
 }
 
-.using-cstm-vars h3 {
+.scu-why-use-it h3 {
 
     font-size: 1.5rem;
-    
+    font-weight: 600;
 
 }
 
-.using-cstm-vars p {
+.scu-why-use-it p {
 
     font-size: 1rem;
-    
+    font-weight: 500;
 
 }
