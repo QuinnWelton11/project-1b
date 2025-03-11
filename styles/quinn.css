@@ -17,51 +17,217 @@
 
 }
 
+.example-two {
+
+    margin: 0 auto;
+    width: 100%;
+
+}
+.example-three {
+
+    margin: 0 auto;
+    width: 100%;
+
+}
+
 
 
 .media-queries h3 {
 
-    var(--fs-mobile)
+    font-size: var(--fs-mobile);
+
+    padding: 0 var(--mobile-padding);
 
 }
 
 .media-queries p {
 
-    var(--fs-mobile)
+    font-size: var(--fs-mobile);
+
+    padding: 0 var(--mobile-padding);
 
 }
 
 .creating-variables h3 {
 
-    var(--fs-mobile)
+    font-size: var(--fs-mobile);
+
+    padding: 0 var(--mobile-padding);
 
 }
 
 .creating-variables p {
 
-    var(--fs-mobile)
+    font-size: var(--fs-mobile);
+
+    padding: 0 var(--mobile-padding);
 
 }
 
 .using-cstm-vars h3 {
 
-    var(--fs-mobile)
+    font-size: var(--fs-mobile);
+
+    padding: 0 var(--mobile-padding);
 
 }
 
 .using-cstm-vars p {
 
-    var(--fs-mobile)
+    font-size: var(--fs-mobile);
+
+    padding: 0 var(--mobile-padding);
 
 }
 
 .scu-why-use-it h3 {
-    var(--fs-mobile)
+
+    font-size: var(--fs-mobile);
+
+    padding: 0 var(--mobile-padding);
 
 }
 
 .scu-why-use-it p {
 
-    var(--fs-mobile)
+    font-size: var(--fs-mobile);
+
+    padding: 0 var(--mobile-padding);
+
+}
+
+@media (min-width: 48em;) {
+
+    .media-queries h3 {
+
+        font-size: var(--fs-tablet);
+
+        padding: var(--tablet-padding);
+    
+    }
+    
+    .media-queries p {
+    
+        font-size: var(--fs-tablet);
+
+        padding: var(--tablet-padding);
+    
+    }
+    
+    .creating-variables h3 {
+    
+        font-size: var(--fs-tablet);
+
+        padding: var(--tablet-padding);
+    
+    }
+    
+    .creating-variables p {
+    
+        font-size: var(--fs-tablet);
+
+        padding: var(--tablet-padding);
+    
+    }
+    
+    .using-cstm-vars h3 {
+    
+        font-size: var(--fs-tablet);
+
+        padding: var(--tablet-padding);
+    
+    }
+    
+    .using-cstm-vars p {
+    
+        font-size: var(--fs-tablet);
+
+        padding: var(--tablet-padding);
+    
+    }
+    
+    .scu-why-use-it h3 {
+
+        font-size: var(--fs-tablet);
+
+        padding: var(--tablet-padding);
+    
+    }
+    
+    .scu-why-use-it p {
+    
+        font-size: var(--fs-tablet);
+
+        padding: var(--tablet-padding);
+    
+    }
+
+}
+
+@media (min-width: 67.5rem;) {
+
+    .media-queries h3 {
+
+        font-size: var(--fs-desktop);
+
+        padding: var(--desktop-padding);
+    
+    }
+    
+    .media-queries p {
+    
+        font-size: var(--fs-desktop);
+
+        padding: var(--desktop-padding);
+    
+    }
+    
+    .creating-variables h3 {
+    
+        font-size: var(--fs-desktop);
+
+        padding: var(--desktop-padding);
+    
+    }
+    
+    .creating-variables p {
+    
+        font-size: var(--fs-desktop);
+
+        padding: var(--desktop-padding);
+    
+    }
+    
+    .using-cstm-vars h3 {
+    
+        font-size: var(--fs-desktop);
+
+        padding: var(--desktop-padding);
+    
+    }
+    
+    .using-cstm-vars p {
+    
+        font-size: var(--fs-desktop);
+
+        padding: var(--desktop-padding);
+    
+    }
+    
+    .scu-why-use-it h3 {
+
+        font-size: var(--fs-desktop);
+
+        padding: var(--desktop-padding);
+    
+    }
+    
+    .scu-why-use-it p {
+    
+        font-size: var(--fs-desktop);
+
+        padding: var(--desktop-padding);
+    
+    }
 
 }
