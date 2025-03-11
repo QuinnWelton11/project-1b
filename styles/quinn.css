@@ -20,6 +20,10 @@
     --max-width-tablet: 37.5rem;
     --max-width-desktop: 67.5rem;
 
+    --bg-color: #262523;
+    --fg-color: #F5F5F5;
+    --tr-color: #7dcbff;
+
 }
 
 body {
@@ -29,18 +33,32 @@ body {
     /* margin: 0 auto; */
     padding: 0 var(--padding-1);
     max-width: var(--max-width-mobile);
+    background-color: var(--bg-color);
     /* overflow: hidden; */
 
 }
 
-/* p {
+p {
 
-    max-width: var(--max-width-mobile);
+    color: var(--fg-color);
 
 }
 
-article {
+h1 {
 
-    max-width: var(--max-width-mobile);
+    color: var(--fg-color);
 
-} */
+}
+
+h2,
+h3 {
+
+    color: var(--tr-color)
+
+}
+
+abbr {
+
+    color: var(--tr-color);
+
+}
